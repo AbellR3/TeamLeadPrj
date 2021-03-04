@@ -9,54 +9,59 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
+<body class="body">
 <main class="main">
-    <div class="promo">
+    <div class="promo container">
+        <video class="promo__video" autoplay muted loop>
+            <source src="/static/images/videos/video.mp4" type="video/mp4">
+        </video>
         <h1 class="promo__title">Level up</h1>
-        <img class="promo__img" src="/static/images/prod.png">
-        <ul class="promo__list">
-            <li class="promo__elem">
-                <p class="promo__text">good</p>
-            </li>
-            <li class="promo__elem">
-                <p class="promo__text">good</p>
-            </li>
-            <li class="promo__elem">
-                <p class="promo__text">good</p>
-            </li>
-        </ul>
+        <div class="promo__box">
+            <img class="promo__img" alt="Product photo" src="/static/images/prod.png">
+            <ul class="promo__list">
+                <li class="promo__elem">
+                    <p class="promo__text">Со вкусом мандаринки</p>
+                </li>
+                <li class="promo__elem">
+                    <p class="promo__text">Эффект 10 часов</p>
+                </li>
+                <li class="promo__elem">
+                    <p class="promo__text">Без сахара</p>
+                </li>
+            </ul>
+        </div>
         <button class="button promo__button">Заказать</button>
     </div>
     <div class="composition">
         <div class="composition__left">
             <ul class="composition__list">
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="photo elemement" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="photo elemement" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="photo elemement" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
             </ul>
         </div>
-        <img class="composition__mainImg" src="/static/images/prod.png">
+        <img class="composition__mainImg" alt="photo product" src="./static/images/prod.png">
         <div class="composition__right">
             <ul class="composition__list">
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="element" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="element" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
                 <li class="composition__elem">
-                    <img class="composition__img" src="#">
+                    <img class="composition__img" alt="element" src="#">
                     <p class="composition__name">Элемент</p>
                 </li>
             </ul>
@@ -66,7 +71,7 @@
 
     <div class="reviews">
         <div class="slider">
-            <img class="reviews__photo" src="#">
+            <img class="reviews__photo" alt="element" src="#">
             <p class="reviews__name">Name</p>
             <p class="reviews__text">Text</p>
         </div>
@@ -74,11 +79,11 @@
 
     <div class="presentation">
         <div class="presentation__box">
-            <img class="presentation__man" src="#">
-            <img class="presentation__prod" src="#">
+            <img class="presentation__man" alt="element" src="#">
+            <img class="presentation__prod" alt="element" src="#">
         </div>
         <div class="presentation__description">
-            <p class="presentation__words"
+            <p class="presentation__words"></p>
         </div>
         <div class="presentation__feature">
             <ul class="presentation__list">
@@ -94,6 +99,22 @@
             </ul>
         </div>
         <button class="button presentation__button">Заказать</button>
+    </div>
+    <div class="form">
+        <h2 class="form__title">Level up</h2>
+        <p>Prises</p>
+        <div class="form__timer">Time</div>
+        <img src="/static/images/prod.png">
+        <form class="form__form">
+            <label class="form__field">
+                <span class="form__text">Ваше имя:</span>
+                <input class="form__input" name="name" type="text">
+            </label>
+            <label class="form__field">
+                <span class="form__tel">Ваш телефон:</span>
+                <input class="form__input" name="tel" type="number">
+            </label>
+        </form>
     </div>
 </main>
 </body>

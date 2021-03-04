@@ -1,0 +1,58 @@
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 30px 0 30px 0;
+
+  &__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    font-family: Helvetica, sans-serif;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__img {
+    transform: scale(0.7);
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: circle;
+    color: white;
+
+  }
+
+
+
+  &__text {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+  &__button {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}
+
