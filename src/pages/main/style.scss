@@ -1,4 +1,4 @@
-
+@import "../../components/timer/timer";
 .promo {
   display: flex;
   flex-direction: column;
@@ -45,12 +45,12 @@
   }
 
 
-
   &__text {
     font-family: Helvetica, sans-serif;
     font-size: 24px;
     color: white;
   }
+
   &__button {
     margin: 0 auto;
     font-size: 24px;
@@ -59,7 +59,7 @@
 
 
 .composition {
-  background: linear-gradient(to bottom, #04003f 0%,  #282828 100%);
+  background: linear-gradient(to bottom, #04003f 0%, #282828 100%);
   padding: 40px 0 40px 0;
 
   &__box {
@@ -68,12 +68,15 @@
     align-items: center;
 
   }
+
   &__mainImg {
     transform: scale(0.6);
   }
+
   &__button {
     margin: 0 auto;
   }
+
   &__elem {
     padding: 10px;
     display: flex;
@@ -92,18 +95,21 @@
     display: flex;
     justify-content: center;
   }
+
   &__img {
     width: 300px;
     height: auto;
     position: center;
 
   }
+
   &__name {
-  margin-top: 10px;
-  font-size: 16px;
+    margin-top: 10px;
+    font-size: 16px;
     font-style: italic;
     font-weight: bold;
   }
+
   &__button {
     margin: 0 auto;
     font-size: 24px;
@@ -120,17 +126,20 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   &__title {
     font-size: 36px;
     font-weight: bold;
     color: white;
     margin-bottom: 60px;
   }
+
   &__photo {
     border-radius: 60px;
     width: 50%;
     height: auto;
   }
+
   &__slider {
     display: flex;
     flex-direction: column;
@@ -145,6 +154,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   &__text {
     font-style: italic;
     font-size: 24px;
@@ -154,42 +164,71 @@
 .presentation {
   background: linear-gradient(to bottom, #E6E3C4 0%, #282828 100%);
   height: 100vh;
+
   &__box {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   &__elem {
     display: flex;
     align-items: center;
   }
-  &__description{
+
+  &__description {
     font-size: 24px;
     font-style: italic;
   }
 
   &__button {
-    margin: 20px auto;
-    font-size: 48px;
-    padding: 30px;
+    margin: 50px auto 0 auto;
+    font-size: 24px;
   }
+
   &__list {
-  display: flex;
+    display: flex;
     margin-top: 50px;
     justify-content: center;
     list-style-type: decimal;
 
     font-family: Helvetica, sans-serif;
     font-size: 36px;
-    color:white;
+    color: white;
 
 
   }
+
   &__properties {
     margin-right: 80px;
   }
+
   &__text {
     font-size: 36px;
     font-style: italic;
     color: white;
+  }
+}
+
+.form {
+  background: linear-gradient(to bottom, #282828 0%, #E6E3C4 100%);
+
+  &__box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+  }
+  &__title {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__sale {
+    font-size: 36px;
+    color: white;
+    display: block;
+    text-align: center;
   }
 }
