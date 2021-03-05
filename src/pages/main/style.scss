@@ -56,3 +56,51 @@
   }
 }
 
+
+.composition {
+  background: linear-gradient(to bottom, #04003f 0%,  #282828 100%);
+  padding: 40px 0 40px 0;
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  &__mainImg {
+    transform: scale(0.6);
+  }
+  &__button {
+    margin: 0 auto;
+  }
+  &__elem {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdefb;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  &__cont {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    width: 300px;
+    height: auto;
+    position: center;
+
+  }
+  &__name {
+  margin-top: 10px;
+  font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
