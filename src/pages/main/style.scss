@@ -1,4 +1,20 @@
 @import "../../components/timer/timer";
+
+@keyframes color_move  {
+  from {
+    color:red;
+  }
+  25% {
+    color: #03bc3c;
+  }
+  50% {
+    color: yellow;
+  }
+  to {
+    color: red;
+  }
+}
+
 .promo {
   display: flex;
   flex-direction: column;
@@ -131,13 +147,19 @@
     font-size: 36px;
     font-weight: bold;
     color: white;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
+  &__photoBox {
 
+    overflow: hidden;
+  }
   &__photo {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    text-align: center;
     border-radius: 60px;
-    width: 50%;
-    height: auto;
+
   }
 
   &__slider {
@@ -151,8 +173,8 @@
     font-weight: bold;
     font-style: italic;
     font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -188,7 +210,7 @@
   &__list {
     display: flex;
     margin-top: 50px;
-    justify-content: center;
+    justify-content: space-around;
     list-style-type: decimal;
 
     font-family: Helvetica, sans-serif;
@@ -218,6 +240,7 @@
 
 
   }
+
   &__title {
     font-size: 48px;
     color: white;
@@ -230,5 +253,95 @@
     color: white;
     display: block;
     text-align: center;
+    margin-bottom: 35px;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 25px;
+  }
+  &__old {
+  font-size: 18px;
+    margin-right: 15px;
+    color: black;
+    text-decoration: line-through;
+  }
+  &__new {
+    font-size: 36px;
+    animation: 3s ease-in-out infinite color_move;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border: black solid 4px;
+    border-radius: 40px;
+    padding: 40px;
+
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  &__button {
+    border: 3px solid black;
+    color: black;
+    &:hover, &:focus {
+      background-color: black;
+      color: #FFFFFF;
+
+    }
+  }
+  &__text {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  &__input {
+    border: 4px solid #070707;
+    height: 50px;
+    font-family: Helvetica,sans-serif;
+    font-size: 30px;
+    position: relative;
+    &::placeholder{
+      font-size: 0;
+    }
+    &:focus {
+      &::placeholder {
+        display: inline-block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        font-size: 20px;
+        text-align: end;
+        vertical-align: baseline;
+      }
+    }
+
   }
 }
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: black;
+}
+
+

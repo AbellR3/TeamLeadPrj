@@ -8,6 +8,7 @@
     <title>TeamLead</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="stylesheet" href="/static/fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -93,12 +94,45 @@
     <div class="reviews">
         <div class="container reviews__box">
             <p class="reviews__title">Отзывы</p>
-            <div class="reviews__slider">
-                <img class="reviews__photo" alt="фото клиента"
-                     src="https://memepedia.ru/wp-content/uploads/2016/03/ded-ulybaetsya-foto.jpg">
-                <p class="reviews__name">Гарольд</p>
-                <p class="reviews__text">Жена и соседка довольны!</p>
+            <!--            Swiper-->
+            <div class="swiper-container">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews__slider">
+                            <div class="reviews__photoBox">
+                                <img class="reviews__photo" alt="фото клиента"
+                                     src="https://cs7.pikabu.ru/post_img/big/2019/07/19/4/1563513465158182340.jpg">
+                            </div>
+                            <p class="reviews__name">Гарольд</p>
+                            <p class="reviews__text">Жена и соседка довольны!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__slider">
+                            <div class="reviews__photoBox">
+                                <img class="reviews__photo" alt="фото клиента"
+                                     src="https://memepedia.ru/wp-content/uploads/2017/12/1455974457155724657-e1513102159363.jpg">
+                            </div>
+                            <p class="reviews__name">Александр</p>
+                            <p class="reviews__text">Помогает "вот так вот"!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="reviews__slider">
+                            <div class="reviews__photoBox">
+                                <img class="reviews__photo" alt="фото клиента"
+                                     src="https://3dnews.ru/assets/external/illustrations/2020/08/11/1017900/sm.2.750.jpg">
+                            </div>
+                            <p class="reviews__name">Дима</p>
+                            <p class="reviews__text">Взлетает ракета!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
             </div>
+            <!--            end-->
+
         </div>
     </div>
 
@@ -128,22 +162,32 @@
         <div class="container form__box">
             <h2 class="form__title">Level up</h2>
             <p class="form__sale">Успей заказать до конца дня со скидкой 40%!</p>
+            <p class="form__sale">Цена только сегодня!</p>
+            <div class="form__block">
+                <span class="form__old">5999 руб</span>
+                <span class="form__new">3599 руб</span>
+            </div>
+            <p class="form__sale">Осталось:</p>
             <div class="countbox"></div>
-
-            <img src="/static/images/prod.png">
-            <form class="form__form">
-                <label class="form__field">
-                    <span class="form__text">Ваше имя:</span>
-                    <input class="form__input" name="name" type="text">
-                </label>
-                <label class="form__field">
-                    <span class="form__tel">Ваш телефон:</span>
-                    <input class="form__input" name="tel" type="number">
-                </label>
-            </form>
+            <div class="form__container">
+                <form class="form__form">
+                    <label class="form__field">
+                        <span class="form__text">Ваше имя:</span>
+                        <input class="form__input" placeholder="Иванов Иван" name="name" type="text">
+                    </label>
+                    <label class="form__field">
+                        <span class="form__text">Ваш телефон:</span>
+                        <input class="form__input" name="tel" type="number" placeholder="89277777777">
+                    </label>
+                    <button class="button form__button" type="submit" value="">Отправить</button>
+                </form>
+                <img src="/static/images/prod.png">
+            </div>
         </div>
     </div>
 </main>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="/static/images/js/count.js"></script>
+<script src="/static/images/js/script.js"></script>
 </body>
 </html>
