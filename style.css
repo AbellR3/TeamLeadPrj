@@ -84,7 +84,9 @@
 }
 
 .promo {
-    height: 100vh
+    height: 100vh;
+    background-color: #04003f;
+    z-index: -1;
 }
 
 .promo__cont {
@@ -103,7 +105,7 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1
+    z-index: 0
 }
 
 .promo__title {
