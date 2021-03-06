@@ -324,7 +324,7 @@
     text-align: center
 }
 
-@media (min-width: 1px) and (max-width: 899px) {
+@media (min-width: 1px) and (max-width: 768px) {
     .presentation__description {
         font-size: 18px
     }
