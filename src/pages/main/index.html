@@ -14,26 +14,31 @@
 </head>
 <body class="body">
 <main class="main">
-    <div class="container promo">
+    <div class="promo">
         <video class="promo__video" autoplay muted loop>
             <source src="/static/images/videos/video.mp4" type="video/mp4">
         </video>
-        <h1 class="promo__title">Level up</h1>
-        <div class="promo__box">
-            <img class="promo__img" alt="Product photo" src="/static/images/prod.png">
-            <ul class="promo__list">
-                <li class="promo__elem">
-                    <p class="promo__text">Со вкусом мандаринки</p>
-                </li>
-                <li class="promo__elem">
-                    <p class="promo__text">Эффект 10 часов</p>
-                </li>
-                <li class="promo__elem">
-                    <p class="promo__text">Без сахара</p>
-                </li>
-            </ul>
+        <div class="container promo__cont">
+            <h1 class="promo__title">Level up</h1>
+            <div class="promo__box">
+                <img class="promo__img" alt="Product photo" src="/static/images/prod.png">
+                <ul class="promo__list">
+                    <li class="promo__elem">
+                        <p class="promo__text">Со вкусом мандаринки</p>
+                    </li>
+                    <li class="promo__elem">
+                        <p class="promo__text">Эффект 10 часов</p>
+                    </li>
+                    <li class="promo__elem">
+                        <p class="promo__text">Без сахара</p>
+                    </li>
+                    <li class="promo__elem promo__elem_mod">
+                        <button class="button promo__button button_js">Заказать</button>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-        <button class="button promo__button">Заказать</button>
     </div>
     <div class="composition">
         <div class="container composition__box">
@@ -62,7 +67,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="composition__imgBox">
+                <p class="composition__imgText">Состав</p>
             <img class="composition__mainImg" alt="photo product" src="./static/images/prod.png">
+            </div>
             <div class="composition__right">
                 <ul class="composition__list">
                     <li class="composition__elem">
@@ -89,12 +97,11 @@
                 </ul>
             </div>
         </div>
-        <button class="button composition__button">Заказать</button>
+        <button class="button composition__button button_js">Заказать</button>
     </div>
     <div class="reviews">
         <div class="container reviews__box">
             <p class="reviews__title">Отзывы</p>
-            <!--            Swiper-->
             <div class="swiper-container">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-wrapper">
@@ -130,8 +137,9 @@
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <!--            end-->
+
 
         </div>
     </div>
@@ -140,9 +148,8 @@
         <div class="presentation__box container">
             <div class="presentation__elem">
                 <img class="presentation__man" alt="element" src="/static/images/doctor.png">
-                <p class="presentation__description">Хорошо! Очень хорошо! Очень очень хорошо! Вообще хорошо! Хорошо!
-                    Очень хорошо! Очень очень хорошо! Вообще хорошо! Хорошо! Очень хорошо! Очень очень хорошо! Вообще
-                    хорошо! Хорошо! Очень хорошо! Очень очень хорошо! Вообще хорошо!</p>
+                <p class="presentation__description">Хорошие пилюли! Очень хорошие! Очень очень хорошие! Рекомендую! Хорошие пилюли! Очень хорошие! Очень очень хорошие! Рекомендую! Хорошие пилюли! Очень хорошие! Очень очень хорошие! Рекомендую! Хорошие пилюли! Очень хорошие! Очень очень хорошие! Рекомендую!
+                </p>
             </div>
             <ul class="presentation__list">
                 <li class="presentation__properties">
@@ -155,7 +162,7 @@
                     <p class="presentation__text">Полезные!</p>
                 </li>
             </ul>
-            <button class="button presentation__button">Заказать</button>
+            <button class="button presentation__button button_js">Заказать</button>
         </div>
     </div>
     <div class="form">
@@ -168,7 +175,9 @@
                 <span class="form__new">3599 руб</span>
             </div>
             <p class="form__sale">Осталось:</p>
+
             <div class="countbox"></div>
+
             <div class="form__container">
                 <form class="form__form">
                     <label class="form__field">
@@ -179,9 +188,9 @@
                         <span class="form__text">Ваш телефон:</span>
                         <input class="form__input" name="tel" type="number" placeholder="89277777777">
                     </label>
-                    <button class="button form__button" type="submit" value="">Отправить</button>
+                    <button class="button form__button sendButton_js" type="submit" value="">Отправить</button>
                 </form>
-                <img src="/static/images/prod.png">
+                <img class="form__img" src="/static/images/prod.png">
             </div>
         </div>
     </div>
